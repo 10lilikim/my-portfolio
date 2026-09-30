@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Works & Projects</title>
+  <meta name="description" content="Modern editorial UI/UX design portfolio showcasing web applications, productivity tools, and interactive games." />
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Noise Overlay for editorial texture -->
+  <div class="editorial-noise"></div>
+
+  <!-- Main Container -->
+  <div class="site-wrapper">
+    
+    <!-- Top Editorial Header -->
+    <header class="editorial-header">
+      <div class="header-left">
+        <span class="issue-badge">VOL. 2026</span>
+        <span class="header-divider">/</span>
+        <span class="portfolio-tag">INTERACTIVE DEVELOPER</span>
+      </div>
+      <div class="logo">
+        <a href="#">PORTFOLIO</a>
+      </div>
+      <div class="header-right">
+        <span class="location-tag">SEOUL, KR</span>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">◐</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="hero-section">
+      <div class="hero-meta">
+        <span class="section-number">[ SELECTED WORKS ]</span>
+        <span class="meta-date">2026 COLLECTION</span>
+      </div>
+      <h1 class="hero-title">
+        Crafting <span class="italic">Digital</span><br />
+        <span class="indented">Experiences</span> & Craft.
+      </h1>
+      <div class="hero-footer">
+        <p class="hero-description">
+          사용자 경험과 심미적 가치를 결합한 웹 애플리케이션 및 인터랙티브 프로젝트 모음입니다.
+        </p>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">ALL WORKS</button>
+          <button class="filter-btn" data-filter="utility">UTILITY</button>
+          <button class="filter-btn" data-filter="fintech">FINTECH</button>
+          <button class="filter-btn" data-filter="game">GAME</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <main class="portfolio-grid-section">
+      <div class="cards-grid">
+        
+        <!-- CARD 1: Todo App -->
+        <article class="project-card" data-category="utility" data-href="../To do/index.html">
+          <div class="card-inner">
+            <div class="card-visual visual-todo">
+              <div class="visual-badge">01</div>
+              <div class="ui-mockup-wrapper">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="mockup-title">Task Master</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-item done">
+                    <span class="check-box">✓</span>
+                    <span class="item-text">디자인 시스템 가이드라인 작성</span>
+                  </div>
+                  <div class="mockup-item active">
+                    <span class="check-box"></span>
+                    <span class="item-text">신규 할 일 목록 업데이트</span>
+                    <span class="tag-chip">PRIORITY</span>
+                  </div>
+                  <div class="mockup-item">
+                    <span class="check-box"></span>
+                    <span class="item-text">포트폴리오 카드 레이아웃 검토</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-overlay">
+                <span class="view-project-label">PROJECT OPEN <span class="arrow">↗</span></span>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-header">
+                <span class="card-index">01 / 03</span>
+                <span class="card-tag">UTILITY</span>
+              </div>
+              <h2 class="card-title">Todo App</h2>
+              <p class="card-summary">
+                직관적이고 깔끔한 UI로 일상의 업무와 목표를 효율적으로 관리할 수 있는 모던 할 일 관리 애플리케이션입니다.
+              </p>
+              <div class="card-footer">
+                <span class="tech-stack">HTML5 • CSS3 • JavaScript</span>
+                <span class="card-arrow-btn" aria-label="Open Todo App">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: Currency Converter -->
+        <article class="project-card" data-category="fintech" data-href="../fxconveter/index.html">
+          <div class="card-inner">
+            <div class="card-visual visual-fx">
+              <div class="visual-badge">02</div>
+              <div class="ui-mockup-wrapper">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="mockup-title">Exchange Engine</span>
+                </div>
+                <div class="mockup-body fx-body">
+                  <div class="fx-rate-display">
+                    <span class="currency-pair">USD → KRW</span>
+                    <span class="rate-value">1,342.50 <small class="up">+0.4%</small></span>
+                  </div>
+                  <div class="fx-convert-box">
+                    <div class="currency-input">$ 1,000</div>
+                    <div class="swap-icon">⇄</div>
+                    <div class="currency-output">₩ 1,342,500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-overlay">
+                <span class="view-project-label">PROJECT OPEN <span class="arrow">↗</span></span>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-header">
+                <span class="card-index">02 / 03</span>
+                <span class="card-tag">FINTECH</span>
+              </div>
+              <h2 class="card-title">환율 변환기</h2>
+              <p class="card-summary">
+                실시간 통화 환율을 간편하게 계산하고 비교할 수 있는 미니멀 금융 환율 변환 웹 서비스입니다.
+              </p>
+              <div class="card-footer">
+                <span class="tech-stack">API • Currency Engine • JS</span>
+                <span class="card-arrow-btn" aria-label="Open Currency Converter">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3: Snake Game -->
+        <article class="project-card" data-category="game" data-href="../Snake game/index.html">
+          <div class="card-inner">
+            <div class="card-visual visual-snake">
+              <div class="visual-badge">03</div>
+              <div class="ui-mockup-wrapper">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="mockup-title">Snake Arcade</span>
+                </div>
+                <div class="mockup-body snake-body">
+                  <div class="arcade-screen">
+                    <div class="snake-dot dot-1"></div>
+                    <div class="snake-dot dot-2"></div>
+                    <div class="snake-dot dot-3"></div>
+                    <div class="snake-food">★</div>
+                    <div class="score-pill">SCORE: 1,420</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-overlay">
+                <span class="view-project-label">PROJECT OPEN <span class="arrow">↗</span></span>
+              </div>
+            </div>
+
+            <div class="card-info">
+              <div class="card-header">
+                <span class="card-index">03 / 03</span>
+                <span class="card-tag">GAME</span>
+              </div>
+              <h2 class="card-title">스네이크 게임</h2>
+              <p class="card-summary">
+                클래식 아케이드 감성과 다이나믹한 키보드 조작을 더한 캔버스 기반 레트로 스네이크 게임입니다.
+              </p>
+              <div class="card-footer">
+                <span class="tech-stack">HTML5 Canvas • JS Engine</span>
+                <span class="card-arrow-btn" aria-label="Open Snake Game">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Editorial Statement Footer -->
+    <footer class="editorial-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="footer-title">Let’s build something <span class="italic">remarkable</span> together.</h3>
+        </div>
+        <div class="footer-links">
+          <a href="../To do/index.html" class="footer-link">Todo App</a>
+          <a href="../fxconveter/index.html" class="footer-link">Currency Converter</a>
+          <a href="../Snake game/index.html" class="footer-link">Snake Game</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 PORTFOLIO ARCHIVE</span>
+        <span>MODERN EDITORIAL DESIGN</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
